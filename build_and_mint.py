@@ -12,10 +12,15 @@ from algosdk.future.transaction import AssetConfigTxn
 from algosdk.encoding import encode_address
 from cid import make_cid
 
-################################
+#######################################################
 # Load keys into memory and set 
 # params for current NFT
-################################
+# Should have file called keys.json
+# with two key-value pairs
+# IPFS_KEY - API key from nft.storage
+# ACCOUNT_MNEMONIC - mnemonic for algo creator address
+#######################################################
+
 with open('keys.json') as f:
     keys = json.loads(f.read())
 
