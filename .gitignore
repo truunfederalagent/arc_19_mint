@@ -1,3 +1,4 @@
 keys.json
 .vscode
 images/*
+.DS_Store
